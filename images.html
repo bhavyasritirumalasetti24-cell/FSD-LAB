@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .gallery img:hover {
+            border: 2px solid blue;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Gallery Using Thumbnails</h1>
+    <p>Click on any thumbnail to view the full-sized image.</p>
+
+    <div class="gallery">
+
+        <!-- Image 1 -->
+        <a href="https://picsum.photos/id/1015/800/600" target="_blank">
+            <img src="https://picsum.photos/id/1015/100/100" alt="Image 1">
+        </a>
+
+        <!-- Image 2 -->
+        <a href="https://picsum.photos/id/1025/800/600" target="_blank">
+            <img src="https://picsum.photos/id/1025/100/100" alt="Image 2">
+        </a>
+
+        <!-- Image 3 -->
+        <a href="https://picsum.photos/id/1035/800/600" target="_blank">
+            <img src="https://picsum.photos/id/1035/100/100" alt="Image 3">
+        </a>
+
+        <!-- Image 4 -->
+        <a href="https://picsum.photos/id/1045/800/600" target="_blank">
+            <img src="https://picsum.photos/id/1045/100/100" alt="Image 4">
+        </a>
+
+    </div>
+
+</body>
+</html>
